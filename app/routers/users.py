@@ -15,3 +15,9 @@ def get_users():
         ]   
     }
     return users
+
+
+@router.post("/users")
+def create_user(name: str):
+    new_user = {"id": 4, "name": name}
+    return new_user
